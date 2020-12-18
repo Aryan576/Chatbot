@@ -6958,20 +6958,7 @@
             "answer": "Did you listen <a href=\"https://www.youtube.com/watch?v=sx5PJyzGEpc\" target=\"_blanck\">On my way</a> by Alan Walker?"
           }
         ],
-        "books.list": [
-          {
-            "answer": "<a href=\"https://sak1sham.github.io/Books.html\" target=\"_blanck\">Check this out</a>.<br>This page provides a nice list of books."
-          }
-        ],
-        "ted.list": [
-          {
-            "answer": "<a href=\"https://sak1sham.github.io/ExternalLinks.html\" target=\"_blanck\">Here</a>is a list of my favourite TED talks.<br>This page has a list of TED shows.<br> You may also consider to follow TED <a href = \"https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q\" target=\"_blanck\">Youtube channel</a>"
-          }
-        ],
         "bored": [
-          {
-            "answer": "Boredom fears knowledge. Check <a href = \"https://sak1sham.github.io/\" target=\"_blanck\">this</a> out."
-          },
           {
             "answer": "Some riddles will keep you high. Check <a href = \"https://www.riddles.com/good-riddles\" target=\"_blanck\">this</a> out."
           }

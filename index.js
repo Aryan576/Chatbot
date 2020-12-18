@@ -159,10 +159,7 @@ async function botstr(findStr){
       manager.addAnswer('en', 'songs.list', 'Although, <a href="https://www.youtube.com/watch?v=JGwWNGJdvx8" target="_blanck">this</a> song is old, but old is Gold! This song is a beauty :)');
       manager.addAnswer('en', 'songs.list', 'I donno, why do I keep listening to <a href="https://www.youtube.com/watch?v=4fndeDfaWCg" target="_blanck">this</a> song.');
       manager.addAnswer('en', 'songs.list', 'Did you listen <a href="https://www.youtube.com/watch?v=sx5PJyzGEpc" target="_blanck">On my way</a> by Alan Walker?');
-      manager.addAnswer('en', 'books.list', '<a href="https://sak1sham.github.io/Books.html" target="_blanck">Check this out</a>.<br>This page provides a nice list of books.');
-      manager.addAnswer('en', 'ted.list', '<a href="https://sak1sham.github.io/ExternalLinks.html" target="_blanck">Here</a>is a list of my favourite TED talks.<br>This page has a list of TED shows.<br> You may also consider to follow TED <a href = "https://www.youtube.com/channel/UCsT0YIqwnpJCM-mx7-gSA4Q" target="_blanck">Youtube channel</a>');
-
-      manager.addAnswer('en', 'bored', 'Boredom fears knowledge. Check <a href = "https://sak1sham.github.io/" target="_blanck">this</a> out.');
+     
       manager.addAnswer('en', 'bored', 'Some riddles will keep you high. Check <a href = "https://www.riddles.com/good-riddles" target="_blanck">this</a> out.');
 
       await manager.train();
