@@ -1,0 +1,17 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": "Install all the required npm modules and get set to run a chatbot<br/> Socket.io<br/> Express<br/> http<br/> node-nlp<br/> other dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aryan shah",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "node-nlp": "^4.17.2",
+    "socket.io": "^3.0.4"
+  }
+}

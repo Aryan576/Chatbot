@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <title>ChatBot</title>
+    <style>
+      * { padding: 0; box-sizing: border-box; }
+      body {
+        font: 19px Helvetica, Arial;
+        padding-left:20%;
+        padding-right:20%;
+      }
+      #f { background: #000; position: fixed; bottom: 1%; left:20%; right:20%; border:1px solid black; }
+      #f input { border: 2px solid black; width:80%; font-size:120%; }
+      #f button { background: rgb(130, 224, 255); border:2px solid black; margin-right:0; width:20%;font-size:120%;}
+      #messages { list-style-type: none; padding: 0; padding-bottom: 3%;}
+      #messages li { padding: 5px 10px; }
+      #messages li:nth-child(odd) { background: #eee; text-align:right; }
+      a:link {
+        color: red;
+      }
+
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+    </style>
+
+  </head>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script>
+      $(function () {
+        var socket = io();
+        $('form').submit(function(e){
+          e.preventDefault();
+          socket.emit('chat message', $('#m').val());
+          $('#m').val('');
+          return false;
+        });
+        socket.on('chat message', function(msg){
+          $('#messages').append($('<li>'+msg+'</li>'));
+        });
+
+      });
+  </script>
+
+
+  <body>
+          <ul id="messages">
+            <li>I am a virtual agent</li>
+          </ul>
+          <form action="" id="f">
+            <input id="m" autocomplete="off" /><button type="submit">Send</button>
+          </form>
+  </body>
+</html>
